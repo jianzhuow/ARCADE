@@ -1,45 +1,21 @@
 # Automated Rational Catalyst Design (ARCADE)
-### A Workflow for Fully Automated and Interpretable Design of Complex Catalysts
 
-ARCADE is a fully automated and physics-interpretable computational workflow explicitly tailored for decoding and designing complex multi-element catalysts (e.g., medium- and high-entropy alloys). By seamlessly bridging machine learning accelerated structure exploration with rigorous multi-scale catalytic screening, ARCADE shifts the paradigm from Edisonian trial-and-error to the rational discovery of optimal local chemical environments.
+ARCADE (Automated Rational CAtalyst DEsign) is a generalizable framework integrated within the Digital Catalysis Platform (DigCat: www.digcat.org) to address the multifaceted challenges in multi-element catalyst design. This generalizable framework encompasses thermodynamically stable nanoparticle generation by introducing SRO-based structural features, automated active-site identification and binding energy evaluation, selectivity analysis through active-site matching and adsorption energies comparisons, activity analysis via advanced pH-dependent microkinetic modeling, and comprehensive mechanism elucidation across stability, selectivity, and activity via SRO-derived contribution scores, representing methodological breakthroughs across different aspects of catalyst design.
+
+This repository serves as a functional programmatic demonstration of ARCADE, containing the core code for executing the workflow alongside the datasets reported in our study.
 
 ---
 
-## 🛠️ Computational Workflow
+## Repository Structure
 
-The ARCADE ecosystem is orchestrated into three core methodological engines and a benchmarking dataset repository. To navigate the code, follow the pipeline execution order below:
+The workflow is organized into core programmatic modules and a comprehensive data repository. **For specific usage instructions, environment configurations, and technical notes for each component, please refer to the README file within the respective directory.**
 
-[ 01_ApolloX_v2 ]  --> Structure Generation & Energetic Ranking
-                      │
-                      ▼
-    [ 02_adsorption_site_processing ] --> Screening & Matching Candidates
-                      │
-                      ▼
-   [ 03_contribution_score_evaluation ] --> SRO-Property Quantitative Mapping
-
-### 📂 Repository Structure
-
-* **[`01_ApolloX_v2/`](./01_ApolloX_v2/)**: *Core Structure Generation Engine.* Contains the Monte Carlo engines integrated with Particle Swarm Optimization (PSO) and Machine Learning Potentials (MLP) for high-throughput exploration of vast configurational spaces. 📖 *[See detailed documentation](./01_ApolloX_v2/README.md)*
-* **[`02_adsorption_site_processing/`](./02_adsorption_site_processing/)**: *Adsorption Coordination Search Engine.* Contains automated pipelines for intermediate screening and geometric structural pattern matching. 📖 *[See detailed documentation](./02_adsorption_site_processing/README.md)*
-    * `screening/`: Automated 100% full-relaxation candidate construction for intermediates ($^*\text{COOH}$, $^*\text{OCHO}$, $^*\text{H}$).
-    * `matching/`: Structural pattern matching protocol based on local environment descriptors.
-* **[`03_contribution_score_evaluation/`](./03_contribution_score_evaluation/)**: *Interpretability Engine.* Computes the statistical contribution scores ($S_{\mathit{stab}}$, $S_{\mathit{act}}$, $S_{\mathit{sel}}$) to quantitatively map short-range order (SRO) metrics (Warren–Cowley parameters $\alpha_{ij}$ and Local Density Deviation $\delta_j$) to macroscopic catalytic properties.
-* **[`data/`](./data/)**: *Comprehensive Multi-Scale Dataset.*
+* **`01_ApolloX_v2/`**: Core structure generation engine. Contains the Monte Carlo generative engines integrated with Particle Swarm Optimization iterative algorithm for high-throughput exploration of vast configurational spaces.
+* **`02_adsorption_site_processing/`**: Adsorption configuration search engine. Handles the automated candidate construction for intermediates based on Voronoi analysis and the structural pattern matching protocol based on local environment descriptors.
+* **`03_contribution_score_evaluation/`**: Interpretability engine. Computes the statistical contribution scores to quantitatively map short-range order metrics to macroscopic catalytic properties.
+* **`data/`**: Complete multi-scale dataset tracking the workflow, partitioned into four key stages:
     * `structure_modeling/`: Ensembles, configurations, and thermodynamic metrics from ApolloX.
-    * `adsorption_sites_screening/`: Complete DFT-relaxed adsorption structures and raw binding energies.
-    * `activity_analysis/`: Microkinetic modeling inputs/outputs and volcano curve projections.
-    * `selectivity_analysis/`: Thermodynamic $\Delta\Delta G$ landscapes and kinetic selectivity matching matrices.
+    * `adsorption_sites_screening/`: DFT-relaxed adsorption structures and binding energies.
+    * `activity_analysis/`: Microkinetic modeling outputs, and volcano curve projections.
+    * `selectivity_analysis/`: Thermodynamic energy landscapes and kinetic selectivity matching matrices.
 
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-* Python $\ge$ 3.9
-* ASE (Atomic Simulation Environment)
-
-### Installation
-Clone the repository and set up the local environment:
-```bash
-git clone [https://github.com/jianzhuow/ARCADE.git](https://github.com/jianzhuow/ARCADE.git)
-cd ARCADE
