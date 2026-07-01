@@ -1,0 +1,4 @@
+2026-06-28 03:20:13 - PyHEA - WARNING - Failed to import accelerate module: No module n
+amed 'apollox2.cpp.accelerate'
+This might happen if the C++ extension was not properly 
+built.

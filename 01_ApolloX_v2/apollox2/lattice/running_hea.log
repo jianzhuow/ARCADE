@@ -1,0 +1,15 @@
+2025-08-15 08:49:11 - PyHEA - INFO - PyHEA: A High performance implementation for build
+ing the High Entropy Alloys Models.
+2025-08-15 08:49:11 - PyHEA - INFO -  
+
+              PyHEA      
+        ╔═══════════════╗   
+        ║               ║
+        ║    Fe   Ni    ║   A High performance toolkit for High Entropy Alloys Modeling.
+        ║       Mn      ║   
+        ║    Al   Co    ║ 
+        ║               ║   Developed by Caimei Niu.
+        ╚═══════════════╝   
+    
+2025-08-15 08:49:11 - PyHEA - INFO - Running the PyHEA lattice simulation with the conf
+iguration file: config.yaml

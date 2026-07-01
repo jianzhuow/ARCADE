@@ -1,0 +1,3 @@
+1 The threshold value (23/25) may not be universally applicable to all nanoparticles. Please adjust the threshold according to your specific structure. A reasonable strategy is to start with this initial value and then increase or decrease the threshold based on the results obtained for the fixed atoms.
+
+2 Due to the structural disorder and complexity of nanoparticles, a small number of the generated adsorbates may be placed at inappropriate sites and require manual adjustment. Nevertheless, the proposed approach significantly reduces manual effort compared with constructing all adsorption configurations by hand.

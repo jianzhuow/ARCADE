@@ -1,0 +1,23 @@
+device: gpu               # Computation device (cpu/gpu)
+solutions: 200            # Number of parallel solutions
+total_iter: 10           # Total optimization iterations
+parallel_task: 256       # Number of parallel MC tasks
+converge_depth: 10       # Convergence criterion
+weight:                  # Shell weights for fitness
+  - 1.0
+structure: POSCAR_MEA2_centered  # Input structure file
+target_sro: 925sro
+cut_iter: 5
+cutoff:
+- 3.647
+subgroup: SUB_GROUP
+srogroup: layer2.txt
+mc_num_lattice_per_batch: 3
+mc_batch_num: 1
+mc_num_tasks: 256
+mc_search_depth: 10
+mc_fitness_threshold: 1
+mc_initial_temperature: 0.01
+mc_cooling_rate: 0.9
+mc_annealing_steps: 10
+

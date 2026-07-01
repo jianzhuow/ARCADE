@@ -1,0 +1,57 @@
+2026-06-30 02:24:55 - ApolloX2 - INFO - ApolloX2: A high-performance implementation for
+ constructing fixed-site lattice models.
+2026-06-30 02:24:55 - ApolloX2 - INFO - Running ApolloX2 with the configuration file: c
+onfig.yaml
+2026-06-30 02:24:55 - ApolloX2 - INFO - Running with device: NVIDIA GeForce RTX 4090
+2026-06-30 02:24:55 - ApolloX2 - INFO - Configuration loaded successfully.
+2026-06-30 02:24:55 - ApolloX2 - INFO - Element types:                 [27, 27, 27]
+2026-06-30 02:24:55 - ApolloX2 - INFO - Sro shell weights:             [1.0]
+2026-06-30 02:24:55 - ApolloX2 - INFO - Number of solutions:           200
+2026-06-30 02:24:55 - ApolloX2 - INFO - Number of shells:              1
+2026-06-30 02:24:55 - ApolloX2 - INFO - Total iterations:              10
+2026-06-30 02:24:55 - ApolloX2 - INFO - Convergence depth:             10
+2026-06-30 02:24:55 - ApolloX2 - INFO - Parallel Monte Carlo tasks:    256
+2026-06-30 02:24:55 - ApolloX2 - INFO - Running with processes:        1
+2026-06-30 02:24:55 - ApolloX2 - INFO - Running Local Parallel HCS optimization...
+2026-06-30 02:24:56 - ApolloX2 - INFO - Final lattice structure saved to file output.va
+sp
+2026-06-30 02:24:56 - ApolloX2 - INFO - Total time taken: 0.5584766864776611 seconds.
+
+
+2026-06-30 02:24:56 - ApolloX2 - INFO - Post-processing: Analyzing SRO parameters...
+2026-06-30 02:24:57 - ApolloX2 - INFO - target_sro shape: (1, 3, 3), result_sro shape: 
+(1, 3, 3)
+2026-06-30 02:24:57 - ApolloX2 - INFO - Shell 1 (cutoff=5):
+2026-06-30 02:24:57 - ApolloX2 - INFO - Warren-Cowley Parameters (Result): [[0.13246332
+343517486, -0.2405853159304996, 0.10812199249532417], [-0.026784668704351366, -0.018186
+768059014646, 0.04497143676336601], [0.10225026644024182, -0.17128324331591127, 0.06903
+297687566912]]
+2026-06-30 02:24:57 - ApolloX2 - INFO - Target SRO: [[0.135, -0.238, 0.11], [-0.028, -0
+.018, 0.044], [0.103, -0.17, 0.071]]
+2026-06-30 02:24:57 - ApolloX2 - INFO - Type  |  Result SRO  |  Target SRO  |  Differen
+ce:
+2026-06-30 02:24:57 - ApolloX2 - INFO - ===============================================
+===
+2026-06-30 02:24:57 - ApolloX2 - INFO -  Bi-Bi  |     0.132    |     0.135    |   -0.00
+3
+2026-06-30 02:24:57 - ApolloX2 - INFO -  Bi-La  |    -0.241    |    -0.238    |   -0.00
+3
+2026-06-30 02:24:57 - ApolloX2 - INFO -  Bi-Sn  |     0.108    |     0.110    |   -0.00
+2
+2026-06-30 02:24:57 - ApolloX2 - INFO -  La-Bi  |    -0.027    |    -0.028    |    0.00
+1
+2026-06-30 02:24:57 - ApolloX2 - INFO -  La-La  |    -0.018    |    -0.018    |   -0.00
+0
+2026-06-30 02:24:57 - ApolloX2 - INFO -  La-Sn  |     0.045    |     0.044    |    0.00
+1
+2026-06-30 02:24:57 - ApolloX2 - INFO -  Sn-Bi  |     0.102    |     0.103    |   -0.00
+1
+2026-06-30 02:24:57 - ApolloX2 - INFO -  Sn-La  |    -0.171    |    -0.170    |   -0.00
+1
+2026-06-30 02:24:57 - ApolloX2 - INFO -  Sn-Sn  |     0.069    |     0.071    |   -0.00
+2
+2026-06-30 02:24:57 - ApolloX2 - INFO - ===============================================
+===
+2026-06-30 02:24:57 - ApolloX2 - INFO - Overall Error Metrics:
+2026-06-30 02:24:57 - ApolloX2 - INFO - Mean Absolute Error: 0.001
+2026-06-30 02:24:57 - ApolloX2 - INFO - Root Mean Square Error: 0.002
